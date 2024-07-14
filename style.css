@@ -8,7 +8,6 @@ html,
 body {
   height: inherit;
   width: 100%;
-  background-color: black;
 }
 a {
   text-decoration: none;
@@ -23,6 +22,7 @@ hr {
 .ill {
   width: 100vw;
   padding: 8vmax 0;
+  background-color: black;
 }
 nav {
   position: fixed;
@@ -38,7 +38,7 @@ nav {
 }
 
 /* ------------------------------------ MENU ---------------------------- */
-#bulb{
+#bulb {
   height: 50px;
   transform: rotate(180deg);
 }
@@ -85,13 +85,13 @@ nav {
   height: 100vh;
   width: 100vw;
   background-color: black;
-  position: absolute;
+  position: fixed;
   z-index: 111;
   display: flex;
   align-items: center;
   justify-content: center;
   top: -100%;
-  animation: loading 3s ease-in-out;
+  animation: loading 1.5s ease-in-out;
 }
 
 @keyframes loading {
@@ -215,8 +215,8 @@ nav .img-cnt img {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 720px){
-  .main .contents{
+@media screen and (max-width: 720px) {
+  .main .contents {
     gap: 1vmax;
     padding: 0 1vmax;
   }
@@ -228,7 +228,7 @@ nav .img-cnt img {
 
 /* ------------------------------------ FOOTER ---------------------------- */
 
-footer{
+footer {
   background-color: rgb(255, 255, 255);
   padding: 4vmax 14vmax;
   display: flex;
@@ -236,20 +236,20 @@ footer{
   align-items: center;
   gap: 10px;
 }
-footer a{
+footer a {
   color: black;
 }
-footer .top{
+footer .top {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-footer .icon{
+footer .icon {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-footer .bottom{
+footer .bottom {
   text-align: center;
 }
