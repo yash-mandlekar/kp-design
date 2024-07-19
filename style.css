@@ -272,3 +272,35 @@ footer .icon {
 footer .bottom {
   text-align: center;
 }
+.btm-cnt .pw,
+.btm-cnt .pm {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  footer {
+    padding: 4vmax 2vmax;
+  }
+  footer .icon {
+    flex-direction: column;
+  }
+  .top .w,
+  .top .m {
+    display: none;
+  }
+  footer .top {
+    justify-content: center;
+  }
+  .btm-cnt .pw,
+  .btm-cnt .pm {
+    display: flex;
+    flex-direction: row;
+  }
+  .btm-cnt {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .bottom {
+    text-align: justify;
+  }
+}
